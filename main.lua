@@ -164,8 +164,8 @@ function love.load()
 	
 	love.graphics.setBackgroundColor(0, 0, 0)
 	
-	logo = love.graphics.newImage("graphics/stabyourself.png") --deleted later to save memory
-	logoblood = love.graphics.newImage("graphics/stabyourselfblood.png")
+	logo = love.graphics.newImage("graphics/icon.png") --deleted later to save memory
+	logoblood = love.graphics.newImage("graphics/icon.png")
 
 	--UTF8 Font
 	fontimage = love.graphics.newImage("graphics/SMB/font.png")
