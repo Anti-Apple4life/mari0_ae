@@ -78,7 +78,7 @@ local loadingbardraw = function(add)
 		scale2 = 1
 	end
 	properprint(loadingtext, ((width*16)*scale)/2-string.len(loadingtext)*4*scale, ((height*16)*scale)/2+165*scale2)
-	if FamilyFriendly then
+	if true then
 		love.graphics.setColor(255, 255, 255)
 		properprint("stys.eu", ((width*16)*scale)/2-string.len("stys.eu")*4*scale, 110*scale)
 	else
