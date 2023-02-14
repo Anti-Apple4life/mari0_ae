@@ -80,7 +80,7 @@ local loadingbardraw = function(add)
 	properprint(loadingtext, ((width*16)*scale)/2-string.len(loadingtext)*4*scale, ((height*16)*scale)/2+165*scale2)
 	if true then
 		love.graphics.setColor(255, 255, 255)
-		properprint("stys.eu", ((width*16)*scale)/2-string.len("stys.eu")*4*scale, 110*scale)
+		properprint("Unblockable", ((width*16)*scale)/2-string.len("Unblockable")*4*scale, 110*scale)
 	else
 		love.graphics.setColor(255, 255, 255)
 		love.graphics.draw(logo, ((width*16)*scale)/2, ((height*16)*scale)/2, 0, scale2, scale2, 142, 150)
