@@ -22,11 +22,7 @@ function intro_update(dt)
 		end
 		
 		if introprogress > 0.5 and playedwilhelm == nil then
-			if math.random(300) == 1 then
-				playsound(babysound)
-			else
-				playsound(stabsound)
-			end
+			playsound(babysound)
 			
 			playedwilhelm = true
 		end
@@ -62,20 +58,20 @@ function intro_draw()
 			
 			if introprogress > introfadetime+0.3 and introprogress < introduration - introfadetime then
 				local y = (introprogress-0.2-introfadetime) / (introduration-2*introfadetime) * 206 * 5
-				properprint("Unblockable", ((width*16)*scale)/2-string.len("Unblockable")*4*scale, 110*scale)
+				properprint("unblockable", ((width*16)*scale)/2-string.len("unblockable")*4*scale, 110*scale)
 				love.graphics.setScissor(0, screenheight/2+150*logoscale - y, screenwidth, y)
 				love.graphics.setColor(100, 100, 100, a)
-				properprint("Unblockable", ((width*16)*scale)/2-string.len("Unblockable")*4*scale, 110*scale)
+				properprint("unblockable", ((width*16)*scale)/2-string.len("unblockable")*4*scale, 110*scale)
 				love.graphics.setColor(255, 255, 255, a)
-				properprint("Unblockable", ((width*16)*scale)/2-string.len("Unblockable")*4*scale, 109*scale)
+				properprint("unblockable", ((width*16)*scale)/2-string.len("unblockable")*4*scale, 109*scale)
 				love.graphics.setScissor()
 			elseif introprogress >= introduration - introfadetime then
 				love.graphics.setColor(100, 100, 100, a)
-				properprint("Unblockable", ((width*16)*scale)/2-string.len("Unblockable")*4*scale, 110*scale)
+				properprint("unblockable", ((width*16)*scale)/2-string.len("unblockable")*4*scale, 110*scale)
 				love.graphics.setColor(255, 255, 255, a)
-				properprint("Unblockable", ((width*16)*scale)/2-string.len("Unblockable")*4*scale, 109*scale)
+				properprint("unblockable", ((width*16)*scale)/2-string.len("unblockable")*4*scale, 109*scale)
 			else
-				properprint("Unblockable", ((width*16)*scale)/2-string.len("Unblockable")*4*scale, 110*scale)
+				properprint("unblockable", ((width*16)*scale)/2-string.len("unblockable")*4*scale, 110*scale)
 			end
 		else
 			if introprogress > introfadetime+0.3 and introprogress < introduration - introfadetime then
