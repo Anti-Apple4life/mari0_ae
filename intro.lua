@@ -54,7 +54,7 @@ function intro_draw()
 		
 		love.graphics.setColor(255, 255, 255, a)
 		
-		if FamilyFriendly then
+		if true then
 			--"If you create a minor update that's in game options make you remove the stabyourself logo?????"
 			--"Stabyourself logo is not rated for everyone"
 			--"If make a really free for everyone version for mari0 AE many kids will like this news"
